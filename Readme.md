@@ -16,13 +16,19 @@ Error messages for invalid or empty input
 Only standard Go packages used
 
 🚀 Run the Project
+
 bash
+
 Copy
+
 Edit
+
 go run .
+
 Visit: http://localhost:8080
 
 🛠 Implementation
+
 / → Homepage with input form
 
 /ascii-art → POST route to render ASCII art
