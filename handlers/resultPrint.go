@@ -25,12 +25,12 @@ func ResultPrint(w http.ResponseWriter, r *http.Request) {
 	Banner := r.FormValue("Select")
 	DataBanner, err := os.ReadFile("banners/" + Banner + ".txt")
 	if err != nil {
-		ErrorsHandler(w, "Banner file not found", http.StatusNotFound)
+		ErrorsHandler(w, "Banner file not found", http.StatusInternalServerError)
 		return
 	}
 
 	Input := r.FormValue("Input")
-	if len(Input) > 1000 {
+	if len([]rune(Input)) > 1000 {
 		ErrorsHandler(w, "Input to long", http.StatusBadRequest)
 		return
 	}

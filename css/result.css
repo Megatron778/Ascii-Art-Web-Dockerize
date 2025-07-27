@@ -92,6 +92,11 @@ div.container2 {
   box-shadow: 0 0 10px;
   text-shadow: 0 0 10px;
 
+  text-decoration: none;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Return:hover {

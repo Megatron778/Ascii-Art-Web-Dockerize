@@ -9,6 +9,7 @@ import (
 func Home(w http.ResponseWriter, r *http.Request) {
 	if r.Method != "GET"{
 		ErrorsHandler(w,"Method not allowed ",http.StatusMethodNotAllowed)
+		return
 	}
 	if r.URL.Path != "/" {
 		ErrorsHandler(w, "Page not found", http.StatusNotFound)
