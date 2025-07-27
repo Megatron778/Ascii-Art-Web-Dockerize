@@ -1,38 +1,38 @@
-# ASCII Art Web
-
-## 📜 Description
-
-**Ascii-art-web** is a web-based version of the ascii-art command-line project. It allows users to input custom text and render it in ASCII art format using a selected banner (font). The user interface is accessible through a web browser, providing a simple and interactive way to generate ASCII art.
-
-Supported banner styles:
-- `standard`
-- `shadow`
-- `thinkertoy`
-
-The application handles form submissions via HTTP and returns formatted ASCII art using Go templates.
-
----
-
-## 👨‍💻 Authors
-
-- Yassine Bourazza
-- Mohamed Hilli
-- Abd-el-kafy Bourazza
-
----
-
-## ▶️ Usage
-
-### 1. Run the server
-
-### bash
- - go run .
-
-2. Open your browser and visit:
-http://localhost:8080
+🎨 ASCII Art Web Stylize
+📜 Description
+ascii-art-web-stylize is a Go-based web app that converts user-inputted text into ASCII art using selected banner styles. This version enhances the UI with CSS for a more appealing, responsive, and interactive experience.
 
 
 
-### ⚙️ Implementation Details
-- The server handles two main routes: / renders the homepage with a form, and /ascii-art processes POST requests containing user input and selected banner style. The handler reads the corresponding banner file, maps each character in the input to its ASCII art equivalent based on line offsets, assembles the result line by line, and returns it to the user using Go HTML templates. Errors like missing files or bad input are handled with appropriate HTTP status codes and a custom error page.
+✅ Features
+Banner styles: standard, shadow, thinkertoy
+
+Responsive and user-friendly design
+
+Styled input and form feedback
+
+Error messages for invalid or empty input
+
+Only standard Go packages used
+
+🚀 Run the Project
+bash
+Copy
+Edit
+go run .
+Visit: http://localhost:8080
+
+🛠 Implementation
+/ → Homepage with input form
+
+/ascii-art → POST route to render ASCII art
+
+CSS handles layout, feedback, and visual design
+
+Go templates used for HTML rendering
+
+👨‍💻 Authors
+Yassine Bourazza
+
+Mohamed Hilli
 
