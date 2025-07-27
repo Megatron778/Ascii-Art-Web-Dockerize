@@ -32,6 +32,7 @@ CSS handles layout, feedback, and visual design
 Go templates used for HTML rendering
 
 👨‍💻 Authors
+
 Yassine Bourazza
 
 Mohamed Hilli
